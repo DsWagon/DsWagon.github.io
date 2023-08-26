@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://dswagon.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://dswagon.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-08-26T21:28:54+00:00</updated><id>https://dswagon.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Git</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Git.html" rel="alternate" type="text/html" title="Git"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Git</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Git.html"><![CDATA[<ul> <li>Git Basics <br/> Git is a version control system that lets you track who made changes to what when and has options for easily updating a shared or public version of your code on github.com.</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://dswagon.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://dswagon.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-08-26T21:40:19+00:00</updated><id>https://dswagon.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Git</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Git.html" rel="alternate" type="text/html" title="Git"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Git</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Git.html"><![CDATA[<ul> <li>Git Basics <br/> Git is a version control system that lets you track who made changes to what when and has options for easily updating a shared or public version of your code on github.com.</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">git add .
 git commit -m "Why I did this change"
 git push &lt;remote&gt; &lt;branch&gt; OR git push origin master
@@ -85,46 +85,12 @@ gh pr view -w # opens the pull request page of your current branch in your web b
 Share code snippets through Gist
 GitHub Gist is a pastebin service which allows you to store and share code snippets called gists.</span>
 <span class="p">```</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="sample-posts"/><category term="git"/><category term="github"/><category term="code"/><summary type="html"><![CDATA[Git GitHub]]></summary></entry><entry><title type="html">Markdown</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Markdown.html" rel="alternate" type="text/html" title="Markdown"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Markdown</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Markdown.html"><![CDATA[<ul> <li>Directories &amp; Files <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
-</span><span class="gp">#</span><span class="w"> </span>Where am I? <span class="o">(</span>print working directory<span class="o">)</span> <span class="nb">pwd</span>
-<span class="gp">#</span><span class="w"> </span>Where can I go? <span class="nb">ls</span>, ll
-<span class="gp">#</span><span class="w"> </span>Move directory <span class="nb">cd </span>path/to/directory
-<span class="gp">#</span><span class="w"> </span>Move back? <span class="nb">cd</span> ..
-<span class="gp">#</span><span class="w"> </span>Return to home folder <span class="o">(</span>~<span class="o">)</span> <span class="nb">cd</span>
-<span class="p">```</span>
-</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Create a new directory <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
-</span><span class="go">mkdir new_directory_name
-mkdir first_directory_name second_directory_name
-</span><span class="gp">#</span><span class="w"> </span>Delete a directory <span class="o">(</span>⚠️ careful, there<span class="s1">'s no going back!)
-</span><span class="go">rm -r directory_name
-rm -rf directory_name
-</span><span class="gp">#</span><span class="w"> </span>Create a new file <span class="nb">touch </span>file_name.rb
-<span class="gp">#</span><span class="w"> </span>Move a file somewhere <span class="nb">mv </span>file_name.rb path/to/new/directory
-<span class="gp">#</span><span class="w"> </span>Rename a file <span class="nb">mv  </span>file_name.rb new_file_name.rb
-<span class="gp">#</span><span class="w"> </span>Delete a file <span class="o">(</span>⚠️ careful, there<span class="s1">'s no going back!) rm file_name.rb
-</span><span class="gp">#</span><span class="w"> </span><span class="s1">Open current directory in VSCODE stt, code
-</span><span class="gp">#</span><span class="w"> </span><span class="s1">Open current directory in finder (OS X only) open .</span>
-<span class="p">```</span>
-</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Useful commands <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
-</span><span class="sb"># Clear the command line window clear
-# List running processes ps aux
-# List running processes of a certain application ps aux | grep 'ruby'
-# Kill a process with PID kill &lt;pid&gt;, kill 2209
-# Find PID of process used by a specific port: lsof -i :&lt;port&gt; lsof -i :3000
-# Check local storage usage df -hP
-# Check file sizes of files in current directory du -shc *
-# Check latest system errors dmesg</span>
-<span class="p">```</span>
-</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Keyboard Shortcuts <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
-</span><span class="gp">clear window (keeping history)             #</span><span class="w"> </span>ctrl + l
-<span class="gp">clear window (losing history)              #</span><span class="w"> </span>cmd + k
-<span class="gp">go to the next word                        #</span><span class="w"> </span>alt + →
-<span class="gp">go to the previous word                    #</span><span class="w"> </span>alt + ←
-<span class="gp">go to the beginning of line                #</span><span class="w"> </span>ctrl + a
-<span class="gp">go to the end of line                      #</span><span class="w"> </span>ctrl + e
-<span class="gp">erase the whole line                       #</span><span class="w"> </span>ctrl + u
-<span class="p">```</span>
-</code></pre></div> </div> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="markdown"/><category term="code"/><summary type="html"><![CDATA[Markdown Cheatsheet]]></summary></entry><entry><title type="html">Terminal</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Terminal.html" rel="alternate" type="text/html" title="Terminal"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Terminal</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Terminal.html"><![CDATA[<ul> <li>Directories &amp; Files <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
+</code></pre></div></div>]]></content><author><name></name></author><category term="sample-posts"/><category term="git"/><category term="github"/><category term="code"/><summary type="html"><![CDATA[Git GitHub]]></summary></entry><entry><title type="html">Markdown</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Markdown.html" rel="alternate" type="text/html" title="Markdown"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Markdown</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Markdown.html"><![CDATA[<p>This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for <a href="https://www.markdownguide.org/basic-syntax">basic syntax</a> and <a href="https://www.markdownguide.org/extended-syntax">extended syntax</a>.</p> <h2 id="basic-syntax">Basic Syntax</h2> <p>These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.</p> <h3 id="heading">Heading</h3> <h1 id="h1">H1</h1> <h2 id="h2">H2</h2> <h3 id="h3">H3</h3> <h3 id="bold">Bold</h3> <p><strong>bold text</strong></p> <h3 id="italic">Italic</h3> <p><em>italicized text</em></p> <h3 id="blockquote">Blockquote</h3> <blockquote> <p>blockquote</p> </blockquote> <h3 id="ordered-list">Ordered List</h3> <ol> <li>First item</li> <li>Second item</li> <li>Third item</li> </ol> <h3 id="unordered-list">Unordered List</h3> <ul> <li>First item</li> <li>Second item</li> <li>Third item</li> </ul> <h3 id="code">Code</h3> <p><code class="language-plaintext highlighter-rouge">code</code></p> <h3 id="horizontal-rule">Horizontal Rule</h3> <hr/> <h3 id="link">Link</h3> <p><a href="https://www.markdownguide.org">Markdown Guide</a></p> <h3 id="image">Image</h3> <p><img src="https://www.markdownguide.org/assets/images/tux.png" alt="alt text"/></p> <h2 id="extended-syntax">Extended Syntax</h2> <p>These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.</p> <h3 id="table">Table</h3> <table> <thead> <tr> <th>Syntax</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>Header</td> <td>Title</td> </tr> <tr> <td>Paragraph</td> <td>Text</td> </tr> </tbody> </table> <h3 id="fenced-code-block">Fenced Code Block</h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+</code></pre></div></div> <h3 id="footnote">Footnote</h3> <p>Here’s a sentence with a footnote. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p> <h3 id="heading-id">Heading ID</h3> <h3 id="custom-id">My Great Heading</h3> <h3 id="definition-list">Definition List</h3> <dl> <dt>term</dt> <dd>definition</dd> </dl> <h3 id="strikethrough">Strikethrough</h3> <p><del>The world is flat.</del></p> <h3 id="task-list">Task List</h3> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked"/>Write the press release</li> <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"/>Update the website</li> <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"/>Contact the media</li> </ul> <h3 id="emoji">Emoji</h3> <p>That is so funny! :joy:</p> <p>(See also <a href="https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji">Copying and Pasting Emoji</a>)</p> <h3 id="highlight">Highlight</h3> <p>I need to highlight these ==very important words==.</p> <h3 id="subscript">Subscript</h3> <p>H~2~O</p> <h3 id="superscript">Superscript</h3> <p>X^2^</p> <div class="footnotes" role="doc-endnotes"> <ol> <li id="fn:1" role="doc-endnote"> <p>This is the footnote. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p> </li> </ol> </div>]]></content><author><name></name></author><category term="sample-posts"/><category term="markdown"/><category term="code"/><summary type="html"><![CDATA[Markdown Cheatsheet]]></summary></entry><entry><title type="html">Terminal</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Terminal.html" rel="alternate" type="text/html" title="Terminal"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Terminal</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Terminal.html"><![CDATA[<ul> <li>Directories &amp; Files <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
 </span><span class="gp">#</span><span class="w"> </span>Where am I? <span class="o">(</span>print working directory<span class="o">)</span> <span class="nb">pwd</span>
 <span class="gp">#</span><span class="w"> </span>Where can I go? <span class="nb">ls</span>, ll
 <span class="gp">#</span><span class="w"> </span>Move directory <span class="nb">cd </span>path/to/directory
@@ -144,15 +110,15 @@ rm -rf directory_name
 </span><span class="gp">#</span><span class="w"> </span><span class="s1">Open current directory in VSCODE stt, code
 </span><span class="gp">#</span><span class="w"> </span><span class="s1">Open current directory in finder (OS X only) open .</span>
 <span class="p">```</span>
-</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Useful commands <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
-</span><span class="sb"># Clear the command line window clear
-# List running processes ps aux
-# List running processes of a certain application ps aux | grep 'ruby'
-# Kill a process with PID kill &lt;pid&gt;, kill 2209
-# Find PID of process used by a specific port: lsof -i :&lt;port&gt; lsof -i :3000
-# Check local storage usage df -hP
-# Check file sizes of files in current directory du -shc *
-# Check latest system errors dmesg</span>
+</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Useful commands <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
+</span><span class="gp">#</span><span class="w"> </span>Clear the <span class="nb">command </span>line window clear
+<span class="gp">#</span><span class="w"> </span>List running processes ps aux
+<span class="gp">#</span><span class="w"> </span>List running processes of a certain application ps aux | <span class="nb">grep</span> <span class="s1">'ruby'</span>
+<span class="gp">#</span><span class="w"> </span>Kill a process with PID <span class="nb">kill</span> &lt;pid&gt;, <span class="nb">kill </span>2209
+<span class="gp">#</span><span class="w"> </span>Find PID of process used by a specific port: lsof <span class="nt">-i</span> :&lt;port&gt; lsof <span class="nt">-i</span> :3000
+<span class="gp">#</span><span class="w"> </span>Check <span class="nb">local </span>storage usage <span class="nb">df</span> <span class="nt">-hP</span>
+<span class="gp">#</span><span class="w"> </span>Check file sizes of files <span class="k">in </span>current directory <span class="nb">du</span> <span class="nt">-shc</span> <span class="k">*</span>
+<span class="gp">#</span><span class="w"> </span>Check latest system errors dmesg
 <span class="p">```</span>
 </code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Keyboard Shortcuts <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
 </span><span class="gp">clear window (keeping history)             #</span><span class="w"> </span>ctrl + l
