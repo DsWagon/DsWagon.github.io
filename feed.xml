@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://dswagon.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://dswagon.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-08-26T20:11:39+00:00</updated><id>https://dswagon.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Git</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Git.html" rel="alternate" type="text/html" title="Git"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Git</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Git.html"><![CDATA[<ul> <li>Git Basics</li> </ul> <p>&nbsp;</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://dswagon.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://dswagon.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-08-26T20:18:54+00:00</updated><id>https://dswagon.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Git</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Git.html" rel="alternate" type="text/html" title="Git"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Git</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Git.html"><![CDATA[<ul> <li>Git Basics</li> </ul> <p>&nbsp;</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">git add .
 git commit -m "Why I did this change"
 git push &lt;remote&gt; &lt;branch&gt; OR git push origin master
@@ -92,53 +92,37 @@ git push &lt;remote&gt; &lt;branch&gt; OR git push origin master
 Project history:
 # See the list of all the commits that have done so far : git log git lg</span>
 <span class="p">```</span>
-</code></pre></div></div> <ul> <li>New Features</li> </ul> <p>&nbsp;</p> <p>When you want to start a new feature. You have to create a new branch to work from:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
-</span><span class="sb">(master) git status (CLEAN)
-(master) git checkout -b my-feature
-(my-feature) git add .
-(my-feature) git commit -m 'XXXX'
-(my-feature) git push origin my-feature
-(my-feature) git status (CLEAN)
-(my-feature) gh repo view --web
-# GO CREATE A PULL REQUEST ON GITHUB
-(my-feature) git checkout master
-(master)     git pull origin master
-(master)     git sweep
-(master)     git checkout -b my-new-feature</span>
+</code></pre></div></div> <ul> <li>Directories &amp; Files</li> </ul> <p>&nbsp;</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</span><span class="sb"># Where am I? (print working directory) pwd
+# Where can I go? ls, ll
+# Move directory cd path/to/directory
+# Move back? cd ..
+# Return to home folder (~) cd</span>
 <span class="p">```</span>
-</code></pre></div></div> <ul> <li>Getting latest changes</li> </ul> <p>&nbsp;</p> <p>When you want to get the latest changes from master on your branch:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
-</span><span class="sb">(my-feature) git add .
-(my-feature) git commit -m 'XXXX'
-(my-feature) git status (CLEAN)
-(my-feature) git checkout master
-(master)     git pull origin master
-(master)     git checkout my-feature
-(my-feature) git merge master</span>
+</code></pre></div></div> <h1 id="create-a-new-directory">Create a new directory</h1> <p>&nbsp;</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</span><span class="sb">mkdir new_directory_name
+mkdir first_directory_name second_directory_name
+# Delete a directory (⚠️ careful, there's no going back!)
+rm -r directory_name
+rm -rf directory_name
+# Create a new file touch file_name.rb
+# Move a file somewhere mv file_name.rb path/to/new/directory
+# Rename a file mv  file_name.rb new_file_name.rb
+# Delete a file (⚠️ careful, there's no going back!) rm file_name.rb
+# Open current directory in VSCODE stt, code
+# Open current directory in finder (OS X only) open .</span>
 <span class="p">```</span>
-</code></pre></div></div> <ul> <li>Solving Conflicts</li> </ul> <p>&nbsp;</p> <p>When you can’t merge your Pull Request due to conflicts. GitHub proposes a web interface to resolve conflicts on Pull Requests. First, try to use their feature. It might ease the process. Otherwise, follow this process:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
-</span><span class="sb">(my-feature) git status (CLEAN)
-(my-feature) git checkout master
-(master) git pull origin master
-(master) git checkout my-feature
-(my-feature) git merge master</span>
+</code></pre></div></div> <ul> <li>Useful commands</li> </ul> <p>&nbsp;</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</span><span class="sb"># Clear the command line window clear
+# List running processes ps aux
+# List running processes of a certain application ps aux | grep 'ruby'
+# Kill a process with PID kill &lt;pid&gt;, kill 2209
+# Find PID of process used by a specific port: lsof -i :&lt;port&gt; lsof -i :3000
+# Check local storage usage df -hP
+# Check file sizes of files in current directory du -shc *
+# Check latest system errors dmesg</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>Now it’s time to fix all the conflicts. You have to open your editor and fix them. Locate them with cmd + shift + f.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
-</span><span class="sb">(my-feature) git add .
-(my-feature) git commit -m "Fix conflicts"
-(my-feature) git push origin my-feature</span>
-<span class="p">```</span>
-</code></pre></div></div> <h1 id="go-on-github-now-the-pull-request-can-be-merged">GO ON GITHUB, NOW THE PULL REQUEST CAN BE MERGED</h1> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
-</span><span class="sb">(master) git pull origin master
-(master) git sweep
-(master) git checkout -b my-new-feature</span>
-<span class="p">```</span>
-</code></pre></div></div> <ul> <li>Fix an accidental commit to master This operation can be done ONLY if you HAVEN’T PUSHED to GitHub yet! When you accidentally committed some changes to master and want to move them to a new branch. You have to create a new branch for your feature. This branch will contain your commit. Finally, you’ll have to remove your commit from master. Here are the steps: <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
-</span><span class="sb">(master) git checkout -b my-feature
-(my-feature) git checkout master
-(master) git reset HEAD~ --hard
-(master) git checkout my-feature</span>
-<span class="p">```</span>
-</code></pre></div> </div> <h1 id="you-can-push-to-github-or-continue-to-work-on-your-feature">YOU CAN PUSH TO GITHUB OR CONTINUE TO WORK ON YOUR FEATURE</h1> <p>Sharing/Synching your Repository Ultimately we want to share our code, normally by synching it to a central repository. For doing so, we have to add a remote. git remote add origin git@github.com:username/existing_project.git You can list your remotes with: git remote -v The real powerful thing is that you can add multiple different remotes. This is often used in combination with cloud hosting solutions for deploying your code on your server. For instance, you could add a remote named “heroku” which points to your cloud hosting server repository.</p> </li> <li>GitHub CLI GitHub Command Line Interface. It allows you to interact with GitHub through your terminal. Create a public repository in one command: ````markdown ```git my-responsive-profile git:(master) gh repo create ? What would you like to do? Push an existing local repository to GitHub ? Path to local repository . ? Repository name my-responsive-profile ? Description ? Visibility Public ✓ Created repository dmilon/my-responsive-profile on GitHub ? Add a remote? Yes ? What should the new remote be called? origin ✓ Added remote git@github.com:dmilon/my-responsive-profile.git ? Would you like to push commits from the current branch to the “origin”? Yes ✓ Pushed commits to git@github.com:dmilon/my-responsive-profile.git View a GitHub repository web page Change your current working directory to a local GitHub repository and run:</li> </ul> <p>gh browse # opens this repository GitHub page in your web browser Dealing with Pull Requests Open a new pull request based on your current branch (other than the master or main branch):</p> <p>gh pr create -w # opens the pull request creation page in your web browser Check out a pull request:</p> <p>gh pr checkout {<number> | <url> | <branch>} # fetches and checks out the branch of the PR from GitHub View the pull request page of your current branch (other than the master or main branch):</branch></url></number></p> <p>gh pr view -w # opens the pull request page of your current branch in your web browser Share code snippets through Gist GitHub Gist is a pastebin service which allows you to store and share code snippets called gists.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>]]></content><author><name></name></author><category term="sample-posts"/><category term="terminal"/><category term="code"/><summary type="html"><![CDATA[Terminal Commands]]></summary></entry><entry><title type="html">a post with bibliography</title><link href="https://dswagon.github.io/sample-posts/2023/07/12/post-bibliography.html" rel="alternate" type="text/html" title="a post with bibliography"/><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/07/12/post-bibliography</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/07/12/post-bibliography.html"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. If you would like something more academic, check the <a href="/2021/05/22/distill.html">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="bib"/><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry><entry><title type="html">a post with jupyter notebook</title><link href="https://dswagon.github.io/sample-posts/2023/07/04/jupyter-notebook.html" rel="alternate" type="text/html" title="a post with jupyter notebook"/><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/07/04/jupyter-notebook</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/07/04/jupyter-notebook.html"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
+</code></pre></div></div> <ul> <li>Keyboard Shortcuts</li> </ul> <p>&nbsp;</p> <blockquote> clear window (keeping history) # ctrl + l clear window (losing history) # cmd + k go to the next word # alt + → go to the previous word # alt + ← go to the beginning of line # ctrl + a go to the end of line # ctrl + e erase the whole line # ctrl + u </blockquote>]]></content><author><name></name></author><category term="sample-posts"/><category term="terminal"/><category term="code"/><summary type="html"><![CDATA[Terminal Commands]]></summary></entry><entry><title type="html">a post with bibliography</title><link href="https://dswagon.github.io/sample-posts/2023/07/12/post-bibliography.html" rel="alternate" type="text/html" title="a post with bibliography"/><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/07/12/post-bibliography</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/07/12/post-bibliography.html"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. If you would like something more academic, check the <a href="/2021/05/22/distill.html">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="bib"/><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry><entry><title type="html">a post with jupyter notebook</title><link href="https://dswagon.github.io/sample-posts/2023/07/04/jupyter-notebook.html" rel="alternate" type="text/html" title="a post with jupyter notebook"/><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/07/04/jupyter-notebook</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/07/04/jupyter-notebook.html"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/blog.ipynb" | relative_url %}
 {% capture notebook_exists %}{% file_exists assets/jupyter/blog.ipynb %}{% endcapture %}
 {% if notebook_exists == "true" %}
