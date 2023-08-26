@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dswagon.github.io/al-folio/sitemap.xml
+Sitemap: https://dswagon.github.io/sitemap.xml
