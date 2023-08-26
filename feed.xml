@@ -1,22 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://dswagon.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://dswagon.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-08-26T21:05:37+00:00</updated><id>https://dswagon.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Git</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Git.html" rel="alternate" type="text/html" title="Git"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Git</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Git.html"><![CDATA[<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Git Basics
-&lt;br&gt;
-````markdown
-```git
-git add .
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://dswagon.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://dswagon.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-08-26T21:13:17+00:00</updated><id>https://dswagon.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Git</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Git.html" rel="alternate" type="text/html" title="Git"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Git</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Git.html"><![CDATA[<ul> <li>Git Basics <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</span><span class="sb">git add .
 git commit -m "Why I did this change"
 git push &lt;remote&gt; &lt;branch&gt; OR git push origin master
 Project history:
-# See the list of all the commits that have done so far : git log git lg
-</code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-* New Features
-&lt;br&gt;
-When you want to start a new feature.
-You have to create a new branch to work from:
-
-````markdown
-```git
-(master) git status (CLEAN)
+# See the list of all the commits that have done so far : git log git lg</span>
+<span class="p">```</span>
+</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>New Features<br/> <br/> When you want to start a new feature. You have to create a new branch to work from:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</span><span class="sb">(master) git status (CLEAN)
 (master) git checkout -b my-feature
 (my-feature) git add .
 (my-feature) git commit -m 'XXXX'
@@ -27,8 +17,8 @@ You have to create a new branch to work from:
 (my-feature) git checkout master
 (master)     git pull origin master
 (master)     git sweep
-(master)     git checkout -b my-new-feature
-```
+(master)     git checkout -b my-new-feature</span>
+<span class="p">```</span>
 </code></pre></div></div> <p>&nbsp;</p> <ul> <li>Getting latest changes <br/> When you want to get the latest changes from master on your branch:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">(my-feature) git add .
 (my-feature) git commit -m 'XXXX'
@@ -95,7 +85,7 @@ gh pr view -w # opens the pull request page of your current branch in your web b
 Share code snippets through Gist
 GitHub Gist is a pastebin service which allows you to store and share code snippets called gists.</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>```</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="git"/><category term="github"/><category term="code"/><summary type="html"><![CDATA[Git GitHub]]></summary></entry><entry><title type="html">Markdown</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Markdown.html" rel="alternate" type="text/html" title="Markdown"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Markdown</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Markdown.html"><![CDATA[<ul> <li>Directories &amp; Files <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
+</code></pre></div></div>]]></content><author><name></name></author><category term="sample-posts"/><category term="git"/><category term="github"/><category term="code"/><summary type="html"><![CDATA[Git GitHub]]></summary></entry><entry><title type="html">Markdown</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Markdown.html" rel="alternate" type="text/html" title="Markdown"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Markdown</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Markdown.html"><![CDATA[<ul> <li>Directories &amp; Files <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
 </span><span class="gp">#</span><span class="w"> </span>Where am I? <span class="o">(</span>print working directory<span class="o">)</span> <span class="nb">pwd</span>
 <span class="gp">#</span><span class="w"> </span>Where can I go? <span class="nb">ls</span>, ll
 <span class="gp">#</span><span class="w"> </span>Move directory <span class="nb">cd </span>path/to/directory
