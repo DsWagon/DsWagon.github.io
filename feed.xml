@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://dswagon.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://dswagon.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-08-26T20:41:08+00:00</updated><id>https://dswagon.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Git</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Git.html" rel="alternate" type="text/html" title="Git"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Git</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Git.html"><![CDATA[<ul> <li>Git Basics</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://dswagon.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://dswagon.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-08-26T20:48:44+00:00</updated><id>https://dswagon.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Git</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Git.html" rel="alternate" type="text/html" title="Git"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Git</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Git.html"><![CDATA[<ul> <li>Git Basics <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">git add .
 git commit -m "Why I did this change"
 git push &lt;remote&gt; &lt;branch&gt; OR git push origin master
 Project history:
 # See the list of all the commits that have done so far : git log git lg</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>&nbsp;</p> <ul> <li>New Features</li> </ul> <p>When you want to start a new feature. You have to create a new branch to work from:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>New Features <br/> When you want to start a new feature. You have to create a new branch to work from:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">(master) git status (CLEAN)
 (master) git checkout -b my-feature
 (my-feature) git add .
@@ -19,7 +19,7 @@ Project history:
 (master)     git sweep
 (master)     git checkout -b my-new-feature</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>&nbsp;</p> <ul> <li>Getting latest changes When you want to get the latest changes from master on your branch:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div></div> <p>&nbsp;</p> <ul> <li>Getting latest changes <br/> When you want to get the latest changes from master on your branch:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">(my-feature) git add .
 (my-feature) git commit -m 'XXXX'
 (my-feature) git status (CLEAN)
@@ -28,35 +28,35 @@ Project history:
 (master)     git checkout my-feature
 (my-feature) git merge master</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>&nbsp;</p> <ul> <li>Solving Conflicts</li> </ul> <p>When you can’t merge your Pull Request due to conflicts. GitHub proposes a web interface to resolve conflicts on Pull Requests. First, try to use their feature. It might ease the process. Otherwise, follow this process:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div></div> <p>&nbsp;</p> <ul> <li>Solving Conflicts <br/> When you can’t merge your Pull Request due to conflicts. GitHub proposes a web interface to resolve conflicts on Pull Requests. First, try to use their feature. It might ease the process. Otherwise, follow this process:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">(my-feature) git status (CLEAN)
 (my-feature) git checkout master
 (master) git pull origin master
 (master) git checkout my-feature
 (my-feature) git merge master</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>Now it’s time to fix all the conflicts. You have to open your editor and fix them. Locate them with <code class="language-plaintext highlighter-rouge">$$ cmd + shift + f $$</code>.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div></div> <p><br/> Now it’s time to fix all the conflicts. You have to open your editor and fix them. Locate them with <code class="language-plaintext highlighter-rouge">$$ cmd + shift + f $$</code>. <br/></p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">(my-feature) git add .
 (my-feature) git commit -m "Fix conflicts"
 (my-feature) git push origin my-feature</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>Go on GitHub and merge your Pull Request.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div></div> <p><br/> Go on GitHub and merge your Pull Request. <br/></p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">(master) git pull origin master
 (master) git sweep
 (master) git checkout -b my-new-feature</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>&nbsp;</p> <ul> <li>Fix an accidental commit to master This operation can be done ONLY if you HAVEN’T PUSHED to GitHub yet! When you accidentally committed some changes to master and want to move them to a new branch. You have to create a new branch for your feature. This branch will contain your commit. Finally, you’ll have to remove your commit from master. Here are the steps:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div></div> <p>&nbsp;</p> <ul> <li>Fix an accidental commit to master <br/> This operation can be done ONLY if you HAVEN’T PUSHED to GitHub yet! When you accidentally committed some changes to master and want to move them to a new branch. You have to create a new branch for your feature. This branch will contain your commit. Finally, you’ll have to remove your commit from master. Here are the steps:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">(master) git checkout -b my-feature
 (my-feature) git checkout master
 (master) git reset HEAD~ --hard
 (master) git checkout my-feature</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>&nbsp;</p> <ul> <li>Sharing/Synching your Repository Ultimately we want to share our code, normally by synching it to a central repository. For doing so, we have to add a remote.</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div></div> <p>&nbsp;</p> <ul> <li>Sharing/Synching your Repository <br/> Ultimately we want to share our code, normally by synching it to a central repository. For doing so, we have to add a remote.</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">git remote add origin git@github.com:username/existing_project.git
 You can list your remotes with:
 git remote -v</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>The real powerful thing is that you can add multiple different remotes. This is often used in combination with cloud hosting solutions for deploying your code on your server. For instance, you could add a remote named “heroku” which points to your cloud hosting server repository.</p> <p>&nbsp;</p> <ul> <li>GitHub CLI GitHub Command Line; Interface. It allows you to interact with GitHub through your terminal. Create a public repository in one command:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div></div> <p><br/> The real powerful thing is that you can add multiple different remotes. This is often used in combination with cloud hosting solutions for deploying your code on your server. For instance, you could add a remote named “heroku” which points to your cloud hosting server repository.</p> <p>&nbsp;</p> <ul> <li>GitHub CLI <br/> GitHub Command Line; Interface. It allows you to interact with GitHub through your terminal. Create a public repository in one command:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">my-responsive-profile git:(master) gh repo create
 ? What would you like to do? Push an existing local repository to GitHub
 ? Path to local repository .
@@ -70,7 +70,7 @@ git remote -v</span>
 ? Would you like to push commits from the current branch to the "origin"? Yes
 ✓ Pushed commits to git@github.com:dmilon/my-responsive-profile.git</span>
 <span class="p">```</span>
-</code></pre></div></div> <p>&nbsp;</p> <ul> <li>View a GitHub repository web page<br/> Change your current working directory to a local GitHub repository and run:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div></div> <p>&nbsp;</p> <ul> <li>View a GitHub repository web page <br/> Change your current working directory to a local GitHub repository and run:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb">gh browse # opens this repository GitHub page in your web browser
 Dealing with Pull Requests
 Open a new pull request based on your current branch (other than the master or main branch):
@@ -124,14 +124,14 @@ rm -rf directory_name
 <span class="gp">go to the end of line                      #</span><span class="w"> </span>ctrl + e
 <span class="gp">erase the whole line                       #</span><span class="w"> </span>ctrl + u
 <span class="p">```</span>
-</code></pre></div> </div> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="markdown"/><category term="code"/><summary type="html"><![CDATA[Markdown Cheatsheet]]></summary></entry><entry><title type="html">Terminal</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Terminal.html" rel="alternate" type="text/html" title="Terminal"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Terminal</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Terminal.html"><![CDATA[<ul> <li>Directories &amp; Files <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
+</code></pre></div> </div> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="markdown"/><category term="code"/><summary type="html"><![CDATA[Markdown Cheatsheet]]></summary></entry><entry><title type="html">Terminal</title><link href="https://dswagon.github.io/sample-posts/2023/08/26/Terminal.html" rel="alternate" type="text/html" title="Terminal"/><published>2023-08-26T00:00:00+00:00</published><updated>2023-08-26T00:00:00+00:00</updated><id>https://dswagon.github.io/sample-posts/2023/08/26/Terminal</id><content type="html" xml:base="https://dswagon.github.io/sample-posts/2023/08/26/Terminal.html"><![CDATA[<ul> <li>Directories &amp; Files <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
 </span><span class="gp">#</span><span class="w"> </span>Where am I? <span class="o">(</span>print working directory<span class="o">)</span> <span class="nb">pwd</span>
 <span class="gp">#</span><span class="w"> </span>Where can I go? <span class="nb">ls</span>, ll
 <span class="gp">#</span><span class="w"> </span>Move directory <span class="nb">cd </span>path/to/directory
 <span class="gp">#</span><span class="w"> </span>Move back? <span class="nb">cd</span> ..
 <span class="gp">#</span><span class="w"> </span>Return to home folder <span class="o">(</span>~<span class="o">)</span> <span class="nb">cd</span>
 <span class="p">```</span>
-</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Create a new directory <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
+</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Create a new directory <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
 </span><span class="go">mkdir new_directory_name
 mkdir first_directory_name second_directory_name
 </span><span class="gp">#</span><span class="w"> </span>Delete a directory <span class="o">(</span>⚠️ careful, there<span class="s1">'s no going back!)
@@ -144,7 +144,7 @@ rm -rf directory_name
 </span><span class="gp">#</span><span class="w"> </span><span class="s1">Open current directory in VSCODE stt, code
 </span><span class="gp">#</span><span class="w"> </span><span class="s1">Open current directory in finder (OS X only) open .</span>
 <span class="p">```</span>
-</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Useful commands <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
+</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Useful commands <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">git
 </span><span class="sb"># Clear the command line window clear
 # List running processes ps aux
 # List running processes of a certain application ps aux | grep 'ruby'
@@ -154,7 +154,7 @@ rm -rf directory_name
 # Check file sizes of files in current directory du -shc *
 # Check latest system errors dmesg</span>
 <span class="p">```</span>
-</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Keyboard Shortcuts <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
+</code></pre></div> </div> </li> </ul> <p>&nbsp;</p> <ul> <li>Keyboard Shortcuts <br/> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">terminal
 </span><span class="gp">clear window (keeping history)             #</span><span class="w"> </span>ctrl + l
 <span class="gp">clear window (losing history)              #</span><span class="w"> </span>cmd + k
 <span class="gp">go to the next word                        #</span><span class="w"> </span>alt + →
