@@ -4,23 +4,19 @@
 <span class="py">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span>
 <span class="py">property2</span><span class="p">:</span> <span class="n">value2</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nt">Include</span> <span class="nt">external</span> <span class="nt">css</span> <span class="nt">file</span>
+<span class="nt">-</span> <span class="nt">Include</span> <span class="nt">external</span> <span class="nt">css</span> <span class="nt">file</span>
 <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s1">"stylesheet"</span> <span class="nt">type</span><span class="o">=</span><span class="s1">"text/css"</span> <span class="nt">href</span><span class="o">=</span><span class="s1">"/style.css"</span> <span class="o">/&gt;</span>
-<span class="nt">Internal</span> <span class="nt">styles</span>
+<span class="nt">-</span> <span class="nt">Internal</span> <span class="nt">styles</span>
 <span class="o">&lt;</span><span class="nt">style</span> <span class="nt">type</span><span class="o">=</span><span class="s1">"text/css"</span><span class="o">&gt;</span>
 <span class="nt">div</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#444</span><span class="p">;}</span>
 <span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
 <span class="nt">Inline</span> <span class="nt">styles</span>
 <span class="o">&lt;</span><span class="nt">tag</span> <span class="nt">style</span><span class="o">=</span><span class="s1">"property: value"</span><span class="o">&gt;</span> <span class="o">&lt;/</span><span class="nt">tag</span><span class="o">&gt;</span>
 <span class="p">```</span>
-</code></pre></div></div> <div id="boxmodel"> margin <div> border <div> padding <div> content </div> </div> </div> </div> <hr> <h1 id="selector">Selector</h1> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">css
+</code></pre></div></div> <hr> <h1 id="box-model">Box model</h1> <center> <div class="row justify-content-center align-items-center"> <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/css/box-model-480.webp"></source> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/css/box-model-800.webp"></source> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/css/box-model-1400.webp"></source> <img src="/assets/img/css/box-model.png" class="img-fluid rounded z-depth-1" width="50%" height="50%" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> </center> <hr> <h1 id="selector">Selector</h1> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">css
 </span><span class="o">*</span><span class="nt">all</span> <span class="nt">elements</span>
 <span class="nt">divall</span> <span class="nt">div</span> <span class="nt">tags</span>
-<span class="nt">div</span><span class="o">,</span><span class="nt">pall</span> <span class="nt">divs</span> <span class="nt">and</span> <span class="nt">paragraphs</span>
-<span class="nt">div</span> <span class="nt">pparagraphs</span> <span class="nt">inside</span> <span class="nt">divs</span>
-<span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">pall</span> <span class="nt">p</span> <span class="nt">tags</span><span class="o">,</span> <span class="nt">one</span> <span class="nt">level</span> <span class="nt">deep</span> <span class="nt">in</span> <span class="nt">div</span>
-<span class="nt">div</span> <span class="o">+</span> <span class="nt">pp</span> <span class="nt">tags</span> <span class="nt">immediately</span> <span class="nt">after</span> <span class="nt">div</span>
-<span class="nt">div</span> <span class="o">~</span> <span class="nt">pp</span> <span class="nt">tags</span> <span class="nt">preceded</span> <span class="nt">by</span> <span class="nt">div</span>
+<span class="nt">div</span><span class="o">,</span><span class="nt">p</span> <span class="nt">all</span> <span class="nt">divs</span> <span class="nt">and</span> <span class="nt">paragraphs</span>
 <span class="nc">.classnameall</span> <span class="nt">elements</span> <span class="nt">with</span> <span class="nt">class</span>
 <span class="nf">#idnameelement</span> <span class="nt">with</span> <span class="nt">ID</span>
 <span class="nt">div</span><span class="nc">.classnamedivs</span> <span class="nt">with</span> <span class="nt">certain</span> <span class="nt">classname</span>
@@ -31,228 +27,8 @@
 </span><span class="nt">a</span><span class="nd">:linklink</span> <span class="nt">in</span> <span class="nt">normal</span> <span class="nt">state</span>
 <span class="nt">a</span><span class="nd">:activelink</span> <span class="nt">in</span> <span class="nt">clicked</span> <span class="nt">state</span>
 <span class="nt">a</span><span class="nd">:hoverlink</span> <span class="nt">with</span> <span class="nt">mouse</span> <span class="nt">over</span> <span class="nt">it</span>
-<span class="nt">a</span><span class="nd">:visitedvisited</span> <span class="nt">link</span>
-<span class="nt">p</span><span class="nd">::after</span><span class="p">{</span><span class="nl">content</span><span class="p">:</span><span class="s1">"yo"</span><span class="p">;}</span><span class="nt">add</span> <span class="nt">content</span> <span class="nt">after</span> <span class="nt">p</span>
-<span class="nt">p</span><span class="nd">::beforeadd</span> <span class="nt">content</span> <span class="nt">before</span> <span class="nt">p</span>
-<span class="nt">input</span><span class="nd">:checkedchecked</span> <span class="nt">inputs</span>
-<span class="nt">input</span><span class="nd">:disableddisabled</span> <span class="nt">inputs</span>
-<span class="nt">input</span><span class="nd">:enabledenabled</span> <span class="nt">inputs</span>
-<span class="nt">input</span><span class="nd">:focusinput</span> <span class="nt">has</span> <span class="nt">focus</span>
-<span class="nt">input</span><span class="nd">:in-rangevalue</span> <span class="nt">in</span> <span class="nt">range</span>
-<span class="nt">input</span><span class="nd">:out-of-rangeinput</span> <span class="nt">value</span> <span class="nt">out</span> <span class="nt">of</span> <span class="nt">range</span>
-<span class="nt">input</span><span class="nd">:validinput</span> <span class="nt">with</span> <span class="nt">valid</span> <span class="nt">value</span>
-<span class="nt">input</span><span class="nd">:invalidinput</span> <span class="nt">with</span> <span class="nt">invalid</span> <span class="nt">value</span>
-<span class="nt">input</span><span class="nd">:optionalno</span> <span class="nt">required</span> <span class="nt">attribute</span>
-<span class="nt">input</span><span class="nd">:requiredinput</span> <span class="nt">with</span> <span class="nt">requred</span> <span class="nt">attribute</span>
-<span class="nt">input</span><span class="nd">:read-onlywith</span> <span class="nt">readonly</span> <span class="nt">attribute</span>
-<span class="nt">input</span><span class="nd">:read-writeno</span> <span class="nt">readonly</span> <span class="nt">attrib</span><span class="o">.</span>
-<span class="nt">div</span><span class="nd">:emptyelement</span> <span class="nt">with</span> <span class="nt">no</span> <span class="nt">children</span>
-<span class="nt">p</span><span class="nd">::first-letterfirst</span> <span class="nt">letter</span> <span class="nt">in</span> <span class="nt">p</span>
-<span class="nt">p</span><span class="nd">::first-linefirst</span> <span class="nt">line</span> <span class="nt">in</span> <span class="nt">p</span>
-<span class="nt">p</span><span class="nd">:first-of-typefirst</span> <span class="nt">of</span> <span class="nt">some</span> <span class="nt">type</span>
-<span class="nt">p</span><span class="nd">:last-of-typelast</span> <span class="nt">of</span> <span class="nt">some</span> <span class="nt">type</span>
-<span class="nt">p</span><span class="nd">:lang</span><span class="o">(</span><span class="nt">en</span><span class="o">)</span><span class="nt">p</span> <span class="nt">with</span> <span class="nt">en</span> <span class="nt">language</span> <span class="nt">attribute</span>
-<span class="nd">:not</span><span class="o">(</span><span class="nt">span</span><span class="o">)</span><span class="nt">element</span> <span class="nt">that</span><span class="err">'</span><span class="nt">s</span> <span class="nt">not</span> <span class="nt">a</span> <span class="nt">span</span>
-<span class="nt">p</span><span class="nd">:first-childfirst</span> <span class="nt">child</span> <span class="nt">of</span> <span class="nt">its</span> <span class="nt">parent</span>
-<span class="nt">p</span><span class="nd">:last-childlast</span> <span class="nt">child</span> <span class="nt">of</span> <span class="nt">its</span> <span class="nt">parent</span>
-<span class="nt">p</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">2</span><span class="o">)</span><span class="nt">second</span> <span class="nt">child</span> <span class="nt">of</span> <span class="nt">its</span> <span class="nt">parent</span>
-<span class="nt">p</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">3</span><span class="nt">n</span><span class="o">+</span><span class="err">1</span><span class="o">)</span><span class="nt">nth-child</span> <span class="o">(</span><span class="nt">an</span> <span class="o">+</span> <span class="nt">b</span><span class="o">)</span> <span class="nt">formula</span>
-<span class="nt">p</span><span class="nd">:nth-last-child</span><span class="o">(</span><span class="err">2</span><span class="o">)</span><span class="nt">second</span> <span class="nt">child</span> <span class="nt">from</span> <span class="nt">behind</span>
-<span class="nt">p</span><span class="nd">:nth-of-type</span><span class="o">(</span><span class="err">2</span><span class="o">)</span><span class="nt">second</span> <span class="nt">p</span> <span class="nt">of</span> <span class="nt">its</span> <span class="nt">parent</span>
-<span class="nt">p</span><span class="nd">:nth-last-of-type</span><span class="o">(</span><span class="err">2</span><span class="o">)..</span><span class="nc">.from</span> <span class="nt">behind</span>
-<span class="nt">p</span><span class="nd">:only-of-typeunique</span> <span class="nt">of</span> <span class="nt">its</span> <span class="nt">parent</span>
-<span class="nt">p</span><span class="nd">:only-childonly</span> <span class="nt">child</span> <span class="nt">of</span> <span class="nt">its</span> <span class="nt">parent</span>
-<span class="nd">:rootdocuments</span> <span class="nt">root</span> <span class="nt">element</span>
-<span class="nd">::selectionportion</span> <span class="nt">selected</span> <span class="nt">by</span> <span class="nt">user</span>
-<span class="nd">:targethighlight</span> <span class="nt">active</span> <span class="nt">anchor</span>
-<span class="p">```</span>
-</code></pre></div></div> <hr> <h1 id="attribute-selectors">Attribute selectors</h1> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">css
-</span><span class="nt">a</span><span class="o">[</span><span class="nt">target</span><span class="o">]</span><span class="nt">links</span> <span class="nt">with</span> <span class="nt">a</span> <span class="nt">target</span> <span class="nt">attribute</span>
-<span class="nt">a</span><span class="o">[</span><span class="nt">target</span><span class="o">=</span><span class="s1">"_blank"</span><span class="o">]</span><span class="nt">links</span> <span class="nt">which</span> <span class="nt">open</span> <span class="nt">in</span> <span class="nt">new</span> <span class="nt">tab</span>
-<span class="o">[</span><span class="nt">title</span><span class="o">~=</span><span class="s1">"chair"</span><span class="o">]</span><span class="nt">title</span> <span class="nt">element</span> <span class="nt">containing</span> <span class="nt">a</span> <span class="nt">word</span>
-<span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s1">"chair"</span><span class="o">]</span><span class="nt">class</span> <span class="nt">starts</span> <span class="nt">with</span> <span class="nt">chair</span>
-<span class="o">[</span><span class="nt">class</span><span class="o">|=</span><span class="s1">"chair"</span><span class="o">]</span><span class="nt">class</span> <span class="nt">starts</span> <span class="nt">with</span> <span class="nt">the</span> <span class="nt">chair</span> <span class="nt">word</span>
-<span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s1">"chair"</span><span class="o">]</span><span class="nt">class</span> <span class="nt">contains</span> <span class="nt">chair</span>
-<span class="o">[</span><span class="nt">class</span><span class="err">$</span><span class="o">=</span><span class="s1">"chair"</span><span class="o">]</span><span class="nt">class</span> <span class="nt">ends</span> <span class="nt">with</span> <span class="nt">chair</span>
-<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"button"</span><span class="o">]</span><span class="nt">specified</span> <span class="nt">input</span> <span class="nt">type</span>
 <span class="p">```</span>
 </code></pre></div></div> <hr> <h1 id="properties">Properties</h1> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">css
-</span><span class="nt">align-contentbehavior</span> <span class="nt">of</span> <span class="nt">the</span> <span class="nt">flex-wrap</span> <span class="nt">property</span>
-<span class="nt">align-itemsalignment</span> <span class="nt">for</span> <span class="nt">items</span> <span class="nt">inside</span> <span class="nt">the</span> <span class="nt">container</span>
-<span class="nt">align-selfalignment</span> <span class="nt">for</span> <span class="nt">the</span> <span class="nt">selected</span> <span class="nt">item</span>
-<span class="nt">allchanges</span> <span class="nt">all</span> <span class="nt">properties</span>
-<span class="nt">animationbinds</span> <span class="nt">an</span> <span class="nt">animation</span> <span class="nt">to</span> <span class="nt">an</span> <span class="nt">element</span>
-<span class="nt">animation-delaydelays</span> <span class="nt">animation</span> <span class="nt">start</span>
-<span class="nt">animation-directionreverse</span> <span class="nt">animation</span> <span class="nt">or</span> <span class="nt">in</span> <span class="nt">alternate</span> <span class="nt">cycles</span>
-<span class="nt">animation-durationanimation</span> <span class="nt">duration</span> <span class="nt">in</span> <span class="nt">seconds</span> <span class="nt">or</span> <span class="nt">ms</span>
-<span class="nt">animation-fill-modestyle</span> <span class="nt">when</span> <span class="nt">the</span> <span class="nt">animation</span> <span class="nt">is</span> <span class="nt">not</span> <span class="nt">playing</span>
-<span class="nt">animation-iteration-countnumber</span> <span class="nt">of</span> <span class="nt">an</span> <span class="nt">animation</span> <span class="nt">replays</span>
-<span class="nt">animation-namename</span> <span class="nt">for</span> <span class="nt">the</span> <span class="k">@keyframes</span> <span class="n">animation</span>
-<span class="n">animation-play-statethe</span> <span class="n">animation</span> <span class="n">is</span> <span class="n">running</span> <span class="n">or</span> <span class="n">paused</span>
-<span class="n">animation-timing-functionspeed</span> <span class="n">curve</span> <span class="n">of</span> <span class="n">an</span> <span class="n">animation</span>
-<span class="n">backface-visibilityis</span> <span class="n">element</span> <span class="nb">visible</span> <span class="n">when</span> <span class="n">not</span> <span class="n">facing</span> <span class="n">the</span> <span class="n">screen</span>
-<span class="n">backgroundall</span> <span class="n">background</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">declaration</span>
-<span class="n">background-attachmentis</span> <span class="n">the</span> <span class="n">background</span> <span class="n">image</span> <span class="nb">fixed</span> <span class="n">or</span> <span class="n">scrolls</span>
-<span class="n">background-blend-modeblending</span> <span class="n">mode</span> <span class="n">of</span> <span class="n">each</span> <span class="n">background</span> <span class="n">layer</span>
-<span class="n">background-clippainting</span> <span class="n">area</span> <span class="n">of</span> <span class="n">the</span> <span class="n">background</span>
-<span class="n">background-colorbackground</span> <span class="n">color</span>
-<span class="n">background-imagebackground</span> <span class="n">image</span>
-<span class="n">background-originwhere</span> <span class="n">the</span> <span class="n">background</span> <span class="n">image</span> <span class="n">is</span> <span class="n">positioned</span>
-<span class="n">background-positionstarting</span> <span class="n">position</span> <span class="n">of</span> <span class="n">the</span> <span class="n">background</span> <span class="n">image</span>
-<span class="n">background-repeatthe</span> <span class="n">way</span> <span class="n">the</span> <span class="n">background</span> <span class="n">image</span> <span class="n">is</span> <span class="n">repeated</span>
-<span class="n">background-sizebackground</span> <span class="n">image</span> <span class="n">size</span>
-<span class="n">bordersets</span> <span class="n">all</span> <span class="n">border</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="n">border-bottombottom</span> <span class="n">border</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="n">border-bottom-colorcolor</span> <span class="n">of</span> <span class="n">the</span> <span class="nb">bottom</span> <span class="n">border</span>
-<span class="n">border-bottom-left-radiusborder</span> <span class="nb">bottom</span> <span class="nb">left</span> <span class="n">radius</span>
-<span class="n">border-bottom-right-radiusborder</span> <span class="nb">bottom</span> <span class="nb">right</span> <span class="n">radius</span>
-<span class="n">border-bottom-styleborder</span> <span class="nb">bottom</span> <span class="n">style</span>
-<span class="n">border-bottom-widthborder</span> <span class="nb">bottom</span> <span class="n">width</span>
-<span class="n">border-collapseborder</span> <span class="nb">collapse</span>
-<span class="n">border-colorborder</span> <span class="n">color</span>
-<span class="n">border-imagesets</span> <span class="n">an</span> <span class="n">image</span> <span class="n">as</span> <span class="n">border</span>
-<span class="n">border-image-outsetborder</span> <span class="n">image</span> <span class="n">area</span> <span class="n">extends</span> <span class="n">beyond</span> <span class="n">the</span> <span class="n">border</span> <span class="n">box</span>
-<span class="n">border-image-repeatborder</span> <span class="n">image</span> <span class="n">repeated</span><span class="p">,</span> <span class="n">rounded</span> <span class="n">or</span> <span class="n">stretched</span>
-<span class="n">border-image-slicehow</span> <span class="n">to</span> <span class="n">slice</span> <span class="n">the</span> <span class="n">border</span> <span class="n">image</span>
-<span class="n">border-image-sourcepath</span> <span class="n">to</span> <span class="n">the</span> <span class="n">border</span> <span class="n">image</span>
-<span class="n">border-image-widthborder</span> <span class="n">image</span> <span class="n">width</span>
-<span class="n">border-leftleft</span> <span class="n">border</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="n">border-left-colorborder</span> <span class="nb">left</span> <span class="n">color</span>
-<span class="n">border-left-styleborder</span> <span class="nb">left</span> <span class="n">style</span>
-<span class="n">border-left-widthborder</span> <span class="nb">left</span> <span class="n">width</span>
-<span class="n">border-radiusborder</span> <span class="n">radius</span> <span class="n">of</span> <span class="n">the</span> <span class="n">four</span> <span class="n">rounded</span> <span class="n">corners</span>
-<span class="n">border-rightright</span> <span class="n">border</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="n">border-right-colorborder</span> <span class="nb">right</span> <span class="n">color</span>
-<span class="n">border-right-styleborder</span> <span class="nb">right</span> <span class="n">style</span>
-<span class="n">border-right-widthborder</span> <span class="nb">right</span> <span class="n">width</span>
-<span class="n">border-spacingborder</span> <span class="n">spacing</span>
-<span class="n">border-styleborder</span> <span class="n">style</span>
-<span class="n">border-toptop</span> <span class="n">border</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="n">border-top-colorborder</span> <span class="nb">top</span> <span class="n">color</span>
-<span class="n">border-top-left-radiusborder</span> <span class="nb">top</span> <span class="nb">left</span> <span class="n">radius</span>
-<span class="n">border-top-right-radiusborder</span> <span class="nb">top</span> <span class="nb">right</span> <span class="n">radius</span>
-<span class="n">border-top-styleborder</span> <span class="nb">top</span> <span class="n">style</span>
-<span class="n">border-top-widthborder</span> <span class="nb">top</span> <span class="n">width</span>
-<span class="n">border-widthborder</span> <span class="n">width</span>
-<span class="n">bottombottom</span> <span class="n">offset</span> <span class="n">for</span> <span class="nb">relative</span> <span class="n">and</span> <span class="nb">absolute</span> <span class="n">elements</span>
-<span class="n">box-shadowshadow</span> <span class="n">to</span> <span class="n">element</span>
-<span class="n">box-sizingbox</span> <span class="n">sizing</span> <span class="n">properties</span>
-<span class="n">caption-sideplacement</span> <span class="n">of</span> <span class="n">a</span> <span class="n">table</span> <span class="n">caption</span>
-<span class="n">cleardeny</span> <span class="n">floating</span> <span class="n">of</span> <span class="n">an</span> <span class="n">element</span>
-<span class="n">clipclip</span> <span class="n">an</span> <span class="n">absolutely</span> <span class="n">positioned</span> <span class="n">element</span>
-<span class="n">colortext</span> <span class="n">color</span>
-<span class="n">column-countdivide</span> <span class="n">the</span> <span class="n">content</span> <span class="n">in</span> <span class="n">columns</span>
-<span class="n">column-fillbalanced</span> <span class="n">fill</span> <span class="n">or</span> <span class="n">not</span>
-<span class="n">column-gapgap</span> <span class="n">between</span> <span class="n">the</span> <span class="n">columns</span>
-<span class="n">column-ruleseparator</span> <span class="n">between</span> <span class="n">columns</span><span class="p">,</span> <span class="n">like</span> <span class="n">border</span>
-<span class="n">column-rule-colorcolumn</span> <span class="n">rule</span> <span class="n">color</span>
-<span class="n">column-rule-stylecolumn</span> <span class="n">rule</span> <span class="n">style</span>
-<span class="n">column-rule-widthcolumn</span> <span class="n">rule</span> <span class="n">width</span>
-<span class="n">column-spancolumn</span> <span class="n">span</span>
-<span class="n">column-widthcolumn</span> <span class="n">width</span>
-<span class="n">columnsset</span> <span class="n">column-width</span> <span class="n">and</span> <span class="n">column-count</span>
-<span class="n">contentinsert</span> <span class="n">content</span> <span class="p">:</span><span class="n">before</span> <span class="n">and</span> <span class="p">:</span><span class="n">after</span> <span class="n">elements</span>
-<span class="n">counter-incrementcount</span> <span class="n">sections</span>
-<span class="n">counter-resetreset</span> <span class="n">counter</span>
-<span class="n">cursorcursor</span> <span class="n">type</span> <span class="n">when</span> <span class="n">element</span> <span class="n">is</span> <span class="n">hovered</span>
-<span class="n">directionwriting</span> <span class="n">direction</span><span class="p">,</span> <span class="n">Arabic</span> <span class="n">is</span> <span class="n">using</span> <span class="n">rtl</span>
-<span class="n">displaybox</span> <span class="n">display</span> <span class="n">type</span>
-<span class="n">empty-cellshide</span> <span class="n">borders</span> <span class="n">and</span> <span class="n">background</span> <span class="n">on</span> <span class="n">empty</span> <span class="n">table</span> <span class="n">cells</span>
-<span class="n">filterimage</span> <span class="n">effects</span><span class="p">:</span> <span class="n">grayscale</span><span class="p">,</span> <span class="n">blur</span><span class="p">,</span> <span class="nb">invert</span> <span class="n">etc</span><span class="p">.</span>
-<span class="n">flexitem</span> <span class="n">length</span><span class="p">,</span> <span class="nb">relative</span> <span class="n">to</span> <span class="n">others</span> <span class="nb">inside</span> <span class="n">the</span> <span class="n">container</span>
-<span class="n">flex-basisinitial</span> <span class="n">length</span> <span class="n">of</span> <span class="n">a</span> <span class="n">flexible</span> <span class="n">item</span>
-<span class="n">flex-directiondirection</span> <span class="n">of</span> <span class="n">the</span> <span class="n">flexible</span> <span class="n">items</span>
-<span class="n">flex-flowshorthand</span> <span class="n">for</span> <span class="n">flex-direction</span> <span class="n">and</span> <span class="n">flex-wrap</span>
-<span class="n">flex-growhow</span> <span class="n">much</span> <span class="n">the</span> <span class="n">item</span> <span class="n">will</span> <span class="n">grow</span> <span class="nb">relative</span> <span class="n">other</span> <span class="n">items</span>
-<span class="n">flex-shrinkhow</span> <span class="n">to</span> <span class="n">shrink</span> <span class="n">the</span> <span class="n">item</span> <span class="nb">relative</span> <span class="n">to</span> <span class="n">other</span> <span class="n">items</span>
-<span class="n">flex-wrapwrap</span> <span class="n">flexible</span> <span class="n">items</span>
-<span class="n">floatfloat</span> <span class="n">elements</span> <span class="nb">left</span> <span class="n">or</span> <span class="nb">right</span>
-<span class="n">fontall</span> <span class="n">font</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="err">@</span><span class="n">font-facedeclare</span> <span class="n">non-web-safe</span> <span class="n">fonts</span>
-<span class="n">font-familyfont</span> <span class="n">of</span> <span class="n">the</span> <span class="n">element</span>
-<span class="n">font-sizefont</span> <span class="n">size</span>
-<span class="n">font-size-adjustcontrol</span> <span class="n">font</span> <span class="n">size</span> <span class="n">if</span> <span class="n">the</span> <span class="n">first</span> <span class="n">declared</span> <span class="n">option</span> <span class="n">is</span> <span class="n">not</span> <span class="n">available</span>
-<span class="n">font-stretchwiden</span> <span class="n">or</span> <span class="n">narrow</span> <span class="nb">text</span>
-<span class="n">font-stylefont</span> <span class="n">style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">,</span> <span class="nb">italic</span><span class="p">,</span> <span class="nb">oblique</span>
-<span class="n">font-variantset</span> <span class="nb">small-caps</span>
-<span class="n">font-weightuse</span> <span class="nb">bold</span> <span class="n">or</span> <span class="nb">thin</span> <span class="n">characters</span>
-<span class="n">hanging-punctuationcan</span> <span class="n">a</span> <span class="n">punctuation</span> <span class="n">mark</span> <span class="n">be</span> <span class="n">placed</span> <span class="nb">outside</span> <span class="n">the</span> <span class="n">line</span> <span class="n">box</span><span class="err">?</span>
-<span class="n">heightheight</span> <span class="n">of</span> <span class="n">the</span> <span class="n">element</span>
-<span class="n">justify-contentjustifies</span> <span class="n">flexible</span> <span class="n">container</span><span class="err">'</span><span class="n">s</span> <span class="n">items</span> <span class="n">horizontally</span> <span class="n">if</span> <span class="n">necessary</span>
-<span class="err">@</span><span class="n">keyframesspecifies</span> <span class="n">the</span> <span class="n">animation</span> <span class="n">code</span>
-<span class="n">leftleft</span> <span class="n">offset</span> <span class="n">for</span> <span class="nb">relative</span> <span class="n">and</span> <span class="nb">absolute</span> <span class="n">elements</span>
-<span class="n">letter-spacingspace</span> <span class="n">between</span> <span class="n">characters</span>
-<span class="n">line-heightline</span> <span class="n">height</span> <span class="n">of</span> <span class="nb">text</span> <span class="n">or</span> <span class="n">inline-block</span> <span class="n">elements</span>
-<span class="n">list-styleall</span> <span class="n">list</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="n">list-style-imagereplace</span> <span class="n">the</span> <span class="n">list</span> <span class="n">item</span> <span class="n">marker</span> <span class="n">with</span> <span class="n">an</span> <span class="n">image</span>
-<span class="n">list-style-positionlist</span> <span class="n">item</span> <span class="n">markers</span> <span class="nb">inside</span> <span class="n">or</span> <span class="nb">outside</span> <span class="n">the</span> <span class="n">content</span> <span class="n">flow</span>
-<span class="n">list-style-typeset</span> <span class="n">the</span> <span class="n">type</span> <span class="n">of</span> <span class="n">the</span> <span class="n">list</span> <span class="n">item</span> <span class="n">marker</span>
-<span class="n">marginset</span> <span class="n">the</span> <span class="nb">top</span><span class="p">,</span> <span class="nb">right</span><span class="p">,</span> <span class="nb">bottom</span> <span class="n">and</span> <span class="nb">left</span> <span class="n">margins</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="n">margin-bottombottom</span> <span class="n">margin</span>
-<span class="n">margin-leftleft</span> <span class="n">margin</span>
-<span class="n">margin-rightright</span> <span class="n">margin</span>
-<span class="n">margin-topmargin</span> <span class="nb">top</span>
-<span class="n">max-heightmaximum</span> <span class="n">height</span> <span class="n">of</span> <span class="n">element</span>
-<span class="n">max-widthmaximum</span> <span class="n">width</span> <span class="n">of</span> <span class="n">element</span>
-<span class="err">@</span><span class="n">mediasee</span> <span class="n">media</span> <span class="n">queries</span>
-<span class="n">min-heightminimum</span> <span class="n">height</span>
-<span class="n">min-widthminimum</span> <span class="n">width</span>
-<span class="n">nav-downwhere</span> <span class="n">to</span> <span class="n">navigate</span> <span class="n">when</span> <span class="n">the</span> <span class="n">the</span> <span class="n">arrow-down</span> <span class="n">button</span> <span class="n">is</span> <span class="n">pressed</span>
-<span class="n">nav-indexsets</span> <span class="n">sequential</span> <span class="n">navigation</span> <span class="n">order</span>
-<span class="n">nav-leftwhere</span> <span class="n">to</span> <span class="n">navigate</span> <span class="n">when</span> <span class="n">the</span> <span class="n">the</span> <span class="n">arrow-left</span> <span class="n">button</span> <span class="n">is</span> <span class="n">pressed</span>
-<span class="n">nav-rightwhere</span> <span class="n">to</span> <span class="n">navigate</span> <span class="n">when</span> <span class="n">the</span> <span class="n">the</span> <span class="n">arrow-right</span> <span class="n">button</span> <span class="n">is</span> <span class="n">pressed</span>
-<span class="n">nav-upwhere</span> <span class="n">to</span> <span class="n">navigate</span> <span class="n">when</span> <span class="n">the</span> <span class="n">the</span> <span class="n">arrow-up</span> <span class="n">button</span> <span class="n">is</span> <span class="n">pressed</span>
-<span class="n">opacitytransparency</span> <span class="nb">level</span> <span class="n">of</span> <span class="n">an</span> <span class="n">element</span>
-<span class="n">orderreorder</span> <span class="n">elements</span> <span class="n">in</span> <span class="n">a</span> <span class="n">container</span>
-<span class="n">outlinedrow</span> <span class="n">an</span> <span class="n">outer</span> <span class="n">border</span> <span class="n">around</span> <span class="n">elements</span>
-<span class="n">outline-coloroutline</span> <span class="n">color</span>
-<span class="n">outline-offsetgap</span> <span class="n">between</span> <span class="n">the</span> <span class="n">element</span> <span class="n">and</span> <span class="n">the</span> <span class="n">outline</span>
-<span class="n">outline-styleoutline</span> <span class="n">style</span>
-<span class="n">outline-widthoutline</span> <span class="n">width</span>
-<span class="n">overflowhide</span><span class="p">,</span> <span class="n">display</span> <span class="n">or</span> <span class="nb">scroll</span> <span class="n">if</span> <span class="n">the</span> <span class="n">content</span> <span class="n">overflows</span> <span class="n">its</span> <span class="n">container</span>
-<span class="n">overflow-xhorizontal</span> <span class="n">overflow</span>
-<span class="n">overflow-yvertical</span> <span class="n">overflow</span>
-<span class="n">paddingpadding</span> <span class="n">between</span> <span class="n">the</span> <span class="n">element</span> <span class="n">border</span> <span class="n">and</span> <span class="n">content</span>
-<span class="n">padding-bottompadding</span> <span class="nb">bottom</span>
-<span class="n">padding-leftpadding</span> <span class="nb">left</span>
-<span class="n">padding-rightpadding</span> <span class="nb">right</span>
-<span class="n">padding-toppadding</span> <span class="nb">top</span>
-<span class="n">page-break-afteradds</span> <span class="n">page</span> <span class="n">break</span> <span class="n">after</span> <span class="n">an</span> <span class="n">element</span>
-<span class="n">page-break-beforeadds</span> <span class="n">page</span> <span class="n">break</span> <span class="n">before</span> <span class="n">an</span> <span class="n">element</span>
-<span class="n">page-break-insideallow</span> <span class="n">page</span> <span class="n">break</span> <span class="nb">inside</span> <span class="n">an</span> <span class="n">element</span>
-<span class="n">perspectivehow</span> <span class="n">many</span> <span class="n">pixels</span> <span class="n">the</span> <span class="m">3</span><span class="n">D</span> <span class="n">element</span> <span class="n">is</span> <span class="n">placed</span> <span class="n">from</span> <span class="n">the</span> <span class="n">view</span>
-<span class="n">perspective-originwhere</span> <span class="n">is</span> <span class="n">the</span> <span class="m">3</span><span class="n">D</span> <span class="n">element</span> <span class="n">based</span> <span class="n">in</span> <span class="n">the</span> <span class="n">x-</span> <span class="n">and</span> <span class="n">y-axis</span>
-<span class="n">positionpositioning</span> <span class="n">type</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">,</span> <span class="nb">fixed</span><span class="p">,</span> <span class="nb">relative</span><span class="p">,</span> <span class="nb">static</span>
-<span class="n">quotesset</span> <span class="n">quotation</span> <span class="n">marks</span> <span class="n">to</span> <span class="n">wrap</span> <span class="n">an</span> <span class="n">element</span>
-<span class="n">resizedeclare</span> <span class="n">resizable</span> <span class="n">elements</span>
-<span class="n">rightright</span> <span class="n">offset</span> <span class="n">for</span> <span class="nb">relative</span> <span class="n">and</span> <span class="nb">absolute</span> <span class="n">elements</span>
-<span class="n">tab-sizetab</span> <span class="n">character</span> <span class="n">space</span> <span class="n">length</span>
-<span class="n">table-layouttable</span> <span class="n">layout</span> <span class="n">algorithm</span>
-<span class="n">text-alignhorizontal</span> <span class="n">alignment</span> <span class="n">of</span> <span class="nb">text</span>
-<span class="n">text-align-lasthorizontal</span> <span class="n">alignment</span> <span class="n">of</span> <span class="n">last</span> <span class="n">line</span> <span class="n">of</span> <span class="nb">text</span>
-<span class="n">text-decorationoverline</span><span class="p">,</span> <span class="nb">underline</span> <span class="n">or</span> <span class="nb">line-through</span> <span class="n">the</span> <span class="nb">text</span>
-<span class="n">text-indentindentation</span> <span class="n">of</span> <span class="n">the</span> <span class="n">first</span> <span class="n">line</span> <span class="n">of</span> <span class="n">the</span> <span class="nb">text</span>
-<span class="n">text-overflowthe</span> <span class="n">way</span> <span class="n">how</span> <span class="n">overflowed</span> <span class="n">content</span> <span class="n">is</span> <span class="n">marked</span> <span class="p">(</span><span class="n">ellipsis</span><span class="p">)</span>
-<span class="n">text-shadowtext</span> <span class="n">shadow</span>
-<span class="n">text-transformcapitalization</span> <span class="n">of</span> <span class="nb">text</span>
-<span class="n">toptop</span> <span class="n">offset</span> <span class="n">for</span> <span class="nb">relative</span> <span class="n">and</span> <span class="nb">absolute</span> <span class="n">elements</span>
-<span class="n">transform2D</span> <span class="m">3</span><span class="n">D</span> <span class="n">transformation</span><span class="p">.</span> <span class="n">See</span> <span class="n">widget</span><span class="p">.</span>
-<span class="n">transform-originchanges</span> <span class="n">the</span> <span class="n">position</span> <span class="n">of</span> <span class="n">transformed</span> <span class="n">elements</span>
-<span class="n">transform-stylerender</span> <span class="n">nested</span> <span class="n">elements</span> <span class="n">in</span> <span class="m">3</span><span class="n">D</span>
-<span class="n">transitiontransition</span> <span class="n">properties</span> <span class="n">in</span> <span class="n">one</span> <span class="n">line</span>
-<span class="n">transition-delaydelay</span> <span class="n">before</span> <span class="n">transition</span> <span class="n">effect</span> <span class="n">start</span>
-<span class="n">transition-durationtransition</span> <span class="n">effect</span> <span class="n">duration</span>
-<span class="n">transition-propertywhich</span> <span class="n">CSS</span> <span class="n">property</span> <span class="n">is</span> <span class="n">the</span> <span class="n">transition</span> <span class="n">affecting</span>
-<span class="n">transition-timing-functionspeed</span> <span class="n">curve</span> <span class="n">of</span> <span class="n">the</span> <span class="n">transition</span>
-<span class="n">unicode-bidishould</span> <span class="n">the</span> <span class="nb">text</span> <span class="n">be</span> <span class="n">overridden</span> <span class="n">to</span> <span class="n">support</span> <span class="n">more</span> <span class="n">languages</span>
-<span class="n">user-selectdisable</span> <span class="n">user</span> <span class="n">content</span> <span class="n">selection</span>
-<span class="n">vertical-alignvertical</span> <span class="n">alignment</span>
-<span class="n">visibilityvisibility</span><span class="p">:</span><span class="nb">hidden</span> <span class="n">elements</span> <span class="n">leave</span> <span class="n">a</span> <span class="n">gap</span>
-<span class="n">white-spacehow</span> <span class="n">are</span> <span class="n">white-spaces</span> <span class="n">handled</span>
-<span class="n">widthwidth</span> <span class="n">of</span> <span class="n">an</span> <span class="n">element</span>
-<span class="n">word-breaktext</span> <span class="n">breaking</span> <span class="n">rules</span> <span class="n">when</span> <span class="nb">text</span> <span class="n">reaches</span> <span class="n">the</span> <span class="n">end</span> <span class="n">of</span> <span class="n">the</span> <span class="n">container</span>
-<span class="n">word-spacingsize</span> <span class="n">of</span> <span class="no">white</span> <span class="n">space</span> <span class="n">between</span> <span class="n">words</span>
-<span class="n">word-wrapbreak</span> <span class="n">long</span> <span class="n">words</span> <span class="n">and</span> <span class="n">wrap</span> <span class="n">onto</span> <span class="n">the</span> <span class="n">next</span> <span class="n">line</span>
-<span class="n">z-indexstack</span> <span class="n">order</span> <span class="n">of</span> <span class="n">the</span> <span class="n">element</span>
+</span>
 <span class="p">```</span>
 </code></pre></div></div> <hr> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/code/2023/08/26/Html.html">Html</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/code/2023/08/26/Terminal.html">Terminal</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/code/2023/08/26/Markdown.html">Markdown</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/code/2023/08/26/Markdown-emojy.html">Markdown Emoji</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/code/2023/08/26/Git.html">Git</a> </li> </div> </div> </div> </div> <footer class="fixed-bottom"> <div class="container mt-0"> © Copyright 2023 David Serrano. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a> ❤️. Last updated: August 28, 2023. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script> <script defer src="/assets/js/masonry.js" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js"></script> <script defer src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script> <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script> <script src="/assets/js/no_defer.js?d633890033921b33e0ceb13d22340a9c"></script> <script defer src="/assets/js/common.js?acdb9690d7641b2f8d40529018c71a01"></script> <script defer src="/assets/js/copy_code.js?c9d9dd48933de3831b3ee5ec9c209cac" type="text/javascript"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script type="text/javascript">window.MathJax={tex:{tags:"ams"}};</script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script> <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG7FLN75KB"></script> <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RG7FLN75KB");</script> <script type="text/javascript">function progressBarSetup(){"max"in document.createElement("progress")?(initializeProgressElement(),$(document).on("scroll",function(){progressBar.attr({value:getCurrentScrollPosition()})}),$(window).on("resize",initializeProgressElement)):(resizeProgressBar(),$(document).on("scroll",resizeProgressBar),$(window).on("resize",resizeProgressBar))}function getCurrentScrollPosition(){return $(window).scrollTop()}function initializeProgressElement(){let e=$("#navbar").outerHeight(!0);$("body").css({"padding-top":e}),$("progress-container").css({"padding-top":e}),progressBar.css({top:e}),progressBar.attr({max:getDistanceToScroll(),value:getCurrentScrollPosition()})}function getDistanceToScroll(){return $(document).height()-$(window).height()}function resizeProgressBar(){progressBar.css({width:getWidthPercentage()+"%"})}function getWidthPercentage(){return getCurrentScrollPosition()/getDistanceToScroll()*100}const progressBar=$("#progress");window.onload=function(){setTimeout(progressBarSetup,50)};</script> </body> </html>
