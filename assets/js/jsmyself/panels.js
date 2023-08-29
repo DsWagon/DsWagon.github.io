@@ -1,0 +1,1 @@
+const panels=document.querySelectorAll(".panel");panels.forEach(e=>e.addEventListener("click",e=>{e.currentTarget.classList.toggle("open")})),panels.forEach(e=>e.addEventListener("transitionend",e=>{e.currentTarget.classList.toggle("open-active")}));
