@@ -139,19 +139,19 @@
 <span class="n">delete</span>	<span class="n">array</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
         <span class="n">array</span><span class="p">.</span><span class="nf">delete_at</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>	  <span class="n">name_hash</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 <span class="p">```</span>
-</code></pre></div></div> <hr> <h1 id="useful-built-in-methods">Useful built-in methods</h1> <ul> <li>String <div class="language-markdown highlighter-rouge"> <div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">ruby
+</code></pre></div></div> <hr> <h1 id="useful-built-in-methods">Useful built-in methods</h1> <ul> <li>String</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">ruby
 </span><span class="no">Object</span>	<span class="no">Method</span>	                  <span class="no">Explanation</span>
 <span class="no">String</span>	<span class="p">.</span><span class="nf">to_i</span>	                    <span class="n">transforms</span> <span class="n">the</span> <span class="n">string</span> <span class="n">into</span> <span class="n">an</span> <span class="no">Integer</span>
 <span class="no">String</span>	<span class="p">.</span><span class="nf">to_sym</span>	                  <span class="n">transforms</span> <span class="n">the</span> <span class="n">string</span> <span class="n">into</span> <span class="n">a</span> <span class="no">Symbol</span>
 <span class="no">String</span>	<span class="p">.</span><span class="nf">to_f</span>	                    <span class="n">transforms</span> <span class="n">the</span> <span class="n">string</span> <span class="n">into</span> <span class="n">a</span> <span class="no">Float</span>
 <span class="no">String</span>	<span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>	              <span class="n">returns</span> <span class="n">array</span> <span class="n">of</span> <span class="n">characters</span>
 <span class="no">String</span>	<span class="p">.</span><span class="nf">upcase</span>
-    <span class="p">.</span><span class="nf">downcase</span>
-    <span class="p">.</span><span class="nf">capitalize</span>	              <span class="n">transforms</span> <span class="n">the</span> <span class="n">string</span>
+        <span class="p">.</span><span class="nf">downcase</span>
+        <span class="p">.</span><span class="nf">capitalize</span>	              <span class="n">transforms</span> <span class="n">the</span> <span class="n">string</span>
 <span class="no">String</span>	<span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">new_string</span><span class="p">)</span>	<span class="n">replace</span> <span class="n">something</span> <span class="n">that</span> <span class="n">matches</span> <span class="n">regex</span>
 <span class="no">String</span>	<span class="p">.</span><span class="nf">scan</span><span class="p">(</span><span class="n">regex</span><span class="p">)</span>	            <span class="nb">scan</span> <span class="n">a</span> <span class="n">text</span> <span class="k">for</span> <span class="n">regex</span><span class="p">,</span> <span class="n">returns</span> <span class="n">array</span> <span class="n">of</span> <span class="n">matches</span>
 <span class="p">```</span>
-</code></pre></div> </div> </li> <li>Integer/Float</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">ruby
+</code></pre></div></div> <ul> <li>Integer/Float</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">ruby
 </span><span class="no">Object</span>	<span class="no">Method</span>	<span class="no">Explanation</span>
 <span class="no">Integer</span><span class="o">/</span><span class="no">Float</span>	<span class="p">.</span><span class="nf">to_s</span>	<span class="n">transforms</span> <span class="n">a</span> <span class="no">Float</span> <span class="ow">or</span> <span class="no">Integer</span> <span class="n">to</span> <span class="no">String</span>
 <span class="no">Integer</span><span class="o">/</span><span class="no">Float</span>	<span class="p">.</span><span class="nf">fdiv</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>	<span class="n">get</span> <span class="n">exact</span> <span class="n">division</span> <span class="p">(</span><span class="n">with</span> <span class="n">decimals</span><span class="p">)</span>
@@ -165,18 +165,18 @@
 </span><span class="no">Object</span> <span class="no">Method</span>	<span class="no">Explanation</span>
 <span class="no">Range</span>	<span class="p">.</span><span class="nf">to_a</span>	  <span class="n">quickly</span> <span class="n">get</span> <span class="n">array</span> <span class="n">of</span> <span class="n">elements</span> <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">5</span><span class="p">).</span><span class="nf">to_a</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="p">```</span>
-</code></pre></div></div> <ul> <li>Array <div class="language-markdown highlighter-rouge"> <div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">ruby
+</code></pre></div></div> <ul> <li>Array</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">ruby
 </span><span class="no">Object</span>	<span class="no">Method</span>	<span class="no">Explanation</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">sort</span>	<span class="c1"># sort an array</span>
-<span class="no">Array</span>	<span class="p">.</span><span class="nf">sort_by</span>	<span class="c1"># sort an array based on something</span>
+<span class="no">Array</span>	<span class="p">.</span><span class="nf">sort_by</span> <span class="c1"># sort an array based on something</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">length</span>
-  <span class="p">.</span><span class="nf">count</span>
-  <span class="p">.</span><span class="nf">size</span>	<span class="c1"># returns how many elements in the array</span>
+      <span class="p">.</span><span class="nf">count</span>
+      <span class="p">.</span><span class="nf">size</span>	<span class="c1"># returns how many elements in the array</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">each</span>	<span class="c1"># iterate over all the elements in the array</span>
-<span class="no">Array</span>	<span class="p">.</span><span class="nf">each_with_index</span>	<span class="c1"># iterate over array with index</span>
-<span class="no">Array</span>	<span class="p">.</span><span class="nf">map</span>	<span class="c1"># creates a new array</span>
+<span class="no">Array</span>	<span class="p">.</span><span class="nf">each_with_index</span> <span class="c1"># iterate over array with index</span>
+<span class="no">Array</span>	<span class="p">.</span><span class="nf">map</span> <span class="c1"># creates a new array</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">select</span>
-  <span class="p">.</span><span class="nf">reject</span>	<span class="c1"># select or reject where condition is true</span>
+      <span class="p">.</span><span class="nf">reject</span>	<span class="c1"># select or reject where condition is true</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">empty?</span>	<span class="c1"># check if array is empty</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">include?</span>	<span class="c1"># check if something is present in the array</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">join</span>	<span class="c1"># join elements in array to e.g. one big string</span>
@@ -184,11 +184,11 @@
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">sample</span>	<span class="c1"># get random element</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">shuffle</span>	<span class="c1"># randomize order of array</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">take</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-  <span class="p">.</span><span class="nf">drop</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>	<span class="c1"># take or drop number (num) of elements of array</span>
+      <span class="p">.</span><span class="nf">drop</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>	<span class="c1"># take or drop number (num) of elements of array</span>
 <span class="no">Array</span>	<span class="p">.</span><span class="nf">first</span>
-  <span class="p">.</span><span class="nf">last</span>	     <span class="nb">select</span> <span class="n">first</span> <span class="ow">or</span> <span class="n">last</span> <span class="n">element</span> <span class="n">of</span> <span class="n">array</span>
+      <span class="p">.</span><span class="nf">last</span>	     <span class="nb">select</span> <span class="n">first</span> <span class="ow">or</span> <span class="n">last</span> <span class="n">element</span> <span class="n">of</span> <span class="n">array</span>
 <span class="p">```</span>
-</code></pre></div> </div> <hr> </li> <li>Hash</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">ruby
+</code></pre></div></div> <ul> <li>Hash</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">ruby
 </span><span class="no">Object</span>	<span class="no">Method</span>	<span class="no">Explanation</span>
 <span class="no">Hash</span>	<span class="p">.</span><span class="nf">key?</span><span class="p">(</span><span class="n">name_key</span><span class="p">)</span>	<span class="n">check</span> <span class="k">if</span> <span class="n">key</span> <span class="n">exists</span> <span class="k">in</span> <span class="nb">hash</span>
 <span class="no">Hash</span>	<span class="p">.</span><span class="nf">keys</span>	<span class="n">get</span> <span class="n">array</span> <span class="n">of</span> <span class="n">keys</span> <span class="n">of</span> <span class="n">the</span> <span class="nb">hash</span>
