@@ -194,14 +194,14 @@
   <span class="p">})</span>
 <span class="p">}</span>
 <span class="p">```</span>
-</code></pre></div></div> <hr> <h1 id="ajax">AJAX</h1> <ul> <li>GET request: <div class="language-markdown highlighter-rouge"> <div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">javascript
+</code></pre></div></div> <hr> <h1 id="ajax">AJAX</h1> <ul> <li>GET request:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">javascript
 </span><span class="nf">fetch</span><span class="p">(</span><span class="dl">"</span><span class="s2">SOME_URL</span><span class="dl">"</span><span class="p">)</span>
   <span class="p">.</span><span class="nf">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nf">json</span><span class="p">())</span>
   <span class="p">.</span><span class="nf">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-<span class="c1">// do something with the json</span>
+    <span class="c1">// do something with the json</span>
   <span class="p">})</span>
 <span class="p">```</span>
-</code></pre></div> </div> </li> <li>POST request:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">javascript
+</code></pre></div></div> <ul> <li>POST request:</li> </ul> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">javascript
 </span><span class="nf">fetch</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://reqres.in/api/register</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span>
   <span class="na">method</span><span class="p">:</span> <span class="dl">"</span><span class="s2">POST</span><span class="dl">"</span><span class="p">,</span>
   <span class="na">headers</span><span class="p">:</span> <span class="p">{</span><span class="dl">"</span><span class="s2">Content-Type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">},</span>
